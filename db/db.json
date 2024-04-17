@@ -44,26 +44,8 @@
     },
     {
       "userId": 1,
-      "id": "8",
-      "title": "quo adipisci enim quam ut ab",
-      "completed": true
-    },
-    {
-      "userId": 1,
       "id": "9",
       "title": "molestiae perspiciatis ipsa",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": "10",
-      "title": "illo est ratione doloremque quia maiores aut",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": "11",
-      "title": "vero rerum temporibus dolor",
       "completed": true
     },
     {
@@ -76,12 +58,6 @@
       "userId": 1,
       "id": "13",
       "title": "et doloremque nulla",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": "14",
-      "title": "repellendus sunt dolores architecto voluptatum",
       "completed": true
     },
     {
@@ -133,32 +109,32 @@
     {
       "id": "a227",
       "title": "ddd",
-      "completed": false
+      "completed": true
     },
     {
       "id": "6a51",
       "title": "cccc",
-      "completed": false
+      "completed": true
     },
     {
       "id": "e709",
       "title": "ccc",
-      "completed": false
+      "completed": true
     },
     {
       "id": "b00e",
       "title": "task",
-      "completed": false
+      "completed": true
     },
     {
       "id": "d59f",
       "title": "cc",
-      "completed": false
+      "completed": true
     },
     {
       "id": "b618",
       "title": "c'sainf",
-      "completed": false
+      "completed": true
     },
     {
       "id": "c93b",
