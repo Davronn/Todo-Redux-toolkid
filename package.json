@@ -7,11 +7,20 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "rjs": "json-server --watch db/db.json"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.3",
+    "axios": "^1.6.8",
+    "json-server": "^1.0.0-alpha.23",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.1.1",
+    "redux": "^5.0.1",
+    "redux-toolkit": "^1.1.2",
+    "sass": "^1.75.0",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
