@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchTodos, toggleTodo } from "../app/todos/todoReducer";
+import { addTodo, fetchTodos, toggleTodo } from "../app/todos/todoReducer";
 import "../sass/todo.scss";
+import Todoadd from "./Todoadd";
 
 function Todolist() {
   const { loading, todos, error } = useSelector((state) => state.todo);
   const dispatch = useDispatch();
 
+  const todoLenght = todos.length;
   useEffect(() => {
     dispatch(fetchTodos());
   }, []);
@@ -15,11 +17,10 @@ function Todolist() {
     dispatch(toggleTodo(id)); // Dispatch toggleTodo action with the todo id
   };
 
-  const todoLenght = todos.length;
 
   return (
     <div className="container">
-      <div></div>
+      <div><Todoadd/></div>
       <div className="todos">
         <h1>Todos ({todoLenght})</h1>
         {loading && <h1>Loading....</h1>}

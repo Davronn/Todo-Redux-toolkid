@@ -17,6 +17,11 @@ export const toggleTodo = createAsyncThunk("todo/toggleTodo", (id) =>
     .catch((err) => err.message)
 );
 
+export const addTodo = createAsyncThunk("todo/addTodo", async (todoData) => {
+  const response = await axios.post("http://localhost:3000/todos", todoData);
+  return response.data;
+});
+
 const todo = createSlice({
   name: "todo",
   initialState: {
