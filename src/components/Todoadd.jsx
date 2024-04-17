@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../app/todos/todoReducer";
+import "../sass/add.scss"
 
 function Todoadd() {
   const [inputValue, setInputValue] = useState(""); 
@@ -26,7 +27,7 @@ function Todoadd() {
         value={inputValue}
         onChange={handleInputChange}
       />
-      <button onClick={()=>window.location.reload()} type="submit">Add Todo</button>
+      <button className="btnadd" onClick={()=>window.location.reload()} type="submit">Add Todo</button>
     </form>
   );
 }

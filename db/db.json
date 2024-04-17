@@ -10,19 +10,7 @@
       "userId": 1,
       "id": "12",
       "title": "ipsa repellendus fugit nisi",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": "13",
-      "title": "et doloremque nulla",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": "15",
-      "title": "ab voluptatum amet voluptas",
-      "completed": true
+      "completed": false
     },
     {
       "userId": 1,
@@ -40,7 +28,7 @@
       "userId": 1,
       "id": "18",
       "title": "dolorum est consequatur ea mollitia in culpa",
-      "completed": true
+      "completed": false
     },
     {
       "userId": 1,
@@ -52,12 +40,12 @@
       "userId": 1,
       "id": "20",
       "title": "ullam nobis libero sapiente ad optio sint",
-      "completed": true
+      "completed": false
     },
     {
       "id": "c804",
       "title": "test 1",
-      "completed": false
+      "completed": true
     }
   ]
 }

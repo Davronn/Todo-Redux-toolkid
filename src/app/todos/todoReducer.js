@@ -12,7 +12,7 @@ export const fetchTodos = createAsyncThunk("todo/fetchTodos", () =>
 
 export const toggleTodo = createAsyncThunk("todo/toggleTodo", (id) =>
   axios
-    .patch(`http://localhost:3000/todos/${id}`, { completed: true })
+    .patch(`http://localhost:3000/todos/${id}`, )
     .then((res) => res.data)
     .catch((err) => err.message)
 );
@@ -55,7 +55,7 @@ const todo = createSlice({
       const updatedTodos = state.todos.map((todo) =>
         todo.id === action.payload.id
           ? { ...todo, completed: !todo.completed }
-          : todo
+          : {...todo, completed: todo.completed}
       );
       state.todos = updatedTodos;
     });
