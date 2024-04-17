@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addTodo, deleteTodo, fetchTodos, toggleTodo } from "../app/todos/todoReducer";
+import {
+  addTodo,
+  deleteTodo,
+  fetchTodos,
+  toggleTodo,
+} from "../app/todos/todoReducer";
 import "../sass/todo.scss";
 import Todoadd from "./Todoadd";
 
@@ -14,11 +19,11 @@ function Todolist() {
   }, []);
 
   const handleToggleTodo = (id) => {
-    dispatch(toggleTodo(id)); 
+    dispatch(toggleTodo(id));
   };
 
   const handleDeleteTodo = (id) => {
-    dispatch(deleteTodo(id)); 
+    dispatch(deleteTodo(id));
   };
 
   return (
@@ -32,11 +37,21 @@ function Todolist() {
         {todos.length > 0 && (
           <ul>
             {todos.map((todo) => (
-              <li key={todo.id} onClick={() => handleToggleTodo(todo.id)}>
-                {todo.title} {todo.completed ? "✅" : "❌"}
-                <button onClick={() => handleDeleteTodo(todo.id)}>
-                  Delete
-                </button>
+              <li key={todo.id}>
+                <span
+                  onClick={() => handleToggleTodo(todo.id)}
+                  className={todo.completed ? "true" : "falce"}
+                >
+                  {todo.title}
+                </span>{" "}
+                <div>
+                  <span className="complated">
+                    {todo.completed ? "✅" : "❌"}
+                  </span>
+                  <button onClick={() => handleDeleteTodo(todo.id)}>
+                    Delete
+                  </button>
+                </div>
               </li>
             ))}
           </ul>
