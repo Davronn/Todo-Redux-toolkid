@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTodo } from "../app/todos/todoReducer"; // Import addTodo action creator
+import { addTodo } from "../app/todos/todoReducer";
 
 function Todoadd() {
-  const [inputValue, setInputValue] = useState(""); // State to track input value
+  const [inputValue, setInputValue] = useState(""); 
   const dispatch = useDispatch();
 
-  // Function to handle input change
+ 
   const handleInputChange = (e) => {
     setInputValue(e.target.value); 
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
-    if (!inputValue.trim()) return; // If input value is empty or contains only whitespace, do nothing
-    dispatch(addTodo({ title: inputValue, completed: false })); // Dispatch addTodo action with new todo data
-    setInputValue(""); // Clear input value
+    e.preventDefault(); 
+    if (!inputValue.trim()) return; 
+    dispatch(addTodo({ title: inputValue, completed: false }));
+    setInputValue(""); 
   };
 
   return (
